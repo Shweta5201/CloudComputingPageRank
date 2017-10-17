@@ -1,5 +1,30 @@
+Page rank execution:
+
+step1:
+to parse the file and remove dangling links use parser.java
+command java -jar parser.jar inputwikidata
+no need to give output. generates output.txt
+
+step 2:
+use the output file generated in Pagerank.scala
+command:  spark-submit --class "Pagerank" --master local[2] jarname inputpath outputpath
+
+Graphx:
+for graphX directly input the wikiex data set
+
+For university same as pagerank
+
+
+
+
+
+
 Setting up EC2 Cluster:
 Namenode : ec2-54-211-31-67.compute-1.amazonaws.com
+
+
+
+
 
 1.	Parsing the file in the links->target
 Using java, I parsed the file and removed the dangling links. The file generated is called output.txt. The syntax to run this parser is
