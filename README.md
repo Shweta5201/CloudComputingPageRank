@@ -10,10 +10,12 @@ use the output file generated in Pagerank.scala
 command:  spark-submit --class "Pagerank" --master local[2] jarname inputpath outputpath
 
 Graphx:
-for graphX directly input the wikiex data set
+for graphX directly input the wikiex data set 
 
-For university same as pagerank
-
+For university same as pagerank:
+the university rank is calclulated by the contribution factor. basically a university is ranked higher if it has the hightest contribution factor.
+for mapping university i have downloaded a list of university and basically code calclutates the rank for these universities.
+command:  spark-submit --class "Pagerank" --master local[2] jarname inputpath listofuniversity
 
 
 
